@@ -1,9 +1,11 @@
 import React from "react";
+// import Card from "../CardComponents/";
+import Quantity from "../CardComponents/Quantity/Quantity.tsx";
 
 export default function BascetWithGoods() {
   return (
     <div>
-      <h1>Hello World</h1>
+      <Quantity> hello</Quantity>
     </div>
   );
 }
