@@ -1,1 +1,1 @@
-export { default } from "./SumProduct.js";
+export { default } from "./SumProduct";
