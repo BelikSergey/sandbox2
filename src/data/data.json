@@ -1,0 +1,38 @@
+[
+  {
+    "productName": "Смелость",
+    "img": "https://klike.net/uploads/posts/2019-01/1548662237_4.jpeg",
+    "alt": "courage",
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam et officiis excepturi. Maxime, numquam inventore.",
+    "price": 1200,
+    "currency": "₴",
+    "id": "qwebvdfvcwdce"
+  },
+  {
+    "productName": "Интеллект",
+    "img": "https://young-executive.ru/upload/iblock/486/48699d354dbad6276665092f7838be2e.jpg",
+    "alt": "courage",
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam et officiis excepturi. Maxime, numquam inventore.",
+    "price": 5000,
+    "currency": "₴",
+    "id": "qafgvafwecwdce"
+  },
+  {
+    "productName": "Здоровье",
+    "img": "https://горныевиды.екатеринбург.рф/media/news/news_103425_image_900x_.jpg",
+    "alt": "courage",
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam et officiis excepturi. Maxime, numquam inventore.",
+    "price": 1000,
+    "currency": "₴",
+    "id": "qwecwdce265625"
+  },
+  {
+    "productName": "Счастье",
+    "img": "https://media-cdn.tripadvisor.com/media/photo-s/18/a4/d3/92/caption.jpg",
+    "alt": "courage",
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam et officiis excepturi. Maxime, numquam inventore.",
+    "price": 100,
+    "currency": "₴",
+    "id": "qwecwcweddce"
+  }
+]

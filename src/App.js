@@ -1,10 +1,12 @@
 import "./styles.css";
 import BascetWithGoods from "./Components/BasketWithGoods/";
-// import Quantity from "./Components/CardComponents/Quantity/Quantity";
+import Container from './Components/Ui/Container'
+
+
 export default function App() {
   return (
-    <div>
+    <Container>
       <BascetWithGoods />
-    </div>
+    </Container>
   );
 }

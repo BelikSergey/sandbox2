@@ -1,4 +1,115 @@
-.App {
-  font-family: sans-serif;
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+.Container{
+    background-color: rgb(215, 226, 236);
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+.Card__Container {
+  
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
+  
+}
+.Container__List {
+
+  margin: 15px 10px;
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+}
+.Card__Name__img{
+display: flex;
+align-items: center;
+
+}
+.Card__Name{
+display: block;
+margin-left: 10px;
+}
+
+.Quantity__title{
+display: block;
+text-align: center;
+margin-bottom: 5px;
+
+}
+/* .Card__delete{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+} */
+
+
+.Quantity__input {
+  max-width: 40px;
+  /* border: 1px solid black;
+  border-radius: 4px; */
   text-align: center;
+  align-items: center;
+  padding-left:10px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+.Sum__Title{
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 18px;
+  font-weight: 700
+}
+.Currency__Title{
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700
+}
+.Total__Sum__Container{
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  align-items: flex-end;
+  margin-right: 50px;
+
 }
