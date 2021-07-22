@@ -1,24 +1,28 @@
 import React from "react";
 import { Button } from "@material-ui/core";
+import DeleteIcon from '@material-ui/icons/Delete';
 
 interface Props {
-  color?: string;
-  variant?: string;
-  type?: string;
-  onClick(): void;
+  onDelete(id:string): void;
+  id:string;
 }
 
-const DeleteButtom = ({ onClick }: Props) => {
+const DeleteButtom = ({ onDelete, id }: Props) => {
+  const deleteFunc = ()=>{
+    onDelete(id)
+  }
+  
   return (
     <div>
       <Button
+      // size="small"
+      startIcon={<DeleteIcon />}
+      className="Card__delete"
         color="secondary"
         variant="contained"
         type="button"
-        onClick={onClick}
-      >
-        delete
-      </Button>
+        onClick={deleteFunc}
+      >Удалить</Button>
     </div>
   );
 };

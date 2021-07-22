@@ -1,46 +1,89 @@
 import React, { Component } from "react";
-// import "./Counter.css";
+import { Input, Button } from "@material-ui/core";
 
-interface Props {
+
+interface IProps {
   initialValue: number;
-  step: number;
+  OnChangeInput(a: number): void;
 }
 
 interface State {
   value: number;
 }
 
-export default class Quantity extends Component<Props, State> {
+export default class Quantity extends Component<IProps, State> {
   static defaultProps = {
-    initialValue: 0,
-    step: 1
+    initialValue: 1
   };
 
   state = {
     value: this.props.initialValue
   };
 
-  increment = () => this.setState(({ value }) => ({ value: value + 1 }));
+  sendValue = (value: number) => this.props.OnChangeInput(value);
 
-  decrement = () => this.setState(({ value }) => ({ value: value - 1 }));
+  increment = () => {
+    const { value } = this.state;
+    this.setState(({ value }) => ({ value: value + 1 }));
+    this.sendValue(value + 1);
+  };
+
+  decrement = () => {
+    const { value } = this.state;
+    if (value <= 0) {
+      this.setState(({ value }) => ({ value: 0 }));
+      this.sendValue(0);
+    } else {
+      this.setState(({ value }) => ({ value: value - 1 }));
+      this.sendValue(value - 1);
+    }
+  };
+  onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const input = event.currentTarget.value;
+    const inputToNumber = Number(input);
+
+    if (inputToNumber) {
+      this.setState(({ value }) => ({ value: inputToNumber }));
+      this.sendValue(inputToNumber);
+    } else {
+      this.setState(({ value }) => ({ value: 0 }));
+      this.sendValue(0);
+    }
+  };
 
   render() {
     const { value } = this.state;
-    const { step } = this.props;
 
     return (
-      <div className="">
-        <span className="">{value}</span>
-
+     
         <div className="">
-          <button type="button" onClick={this.increment}>
-            Увеличить на {step}
-          </button>
-          <button type="button" onClick={this.decrement}>
-            Уменьшить на {step}
-          </button>
+            <h3 className="Quantity__title">Количество</h3>
+          <Button
+            size="small"
+            color="primary"
+            variant="contained"
+            type="button"
+            onClick={this.decrement}
+          >
+            -
+          </Button>
+          <Input
+            className="Quantity__input"
+            type="text"
+            value={value}
+            onChange={this.onChange}
+          ></Input>
+          <Button
+            size="small"
+            color="primary"
+            variant="contained"
+            type="button"
+            onClick={this.increment}
+          >
+            +
+          </Button>
         </div>
-      </div>
+  
     );
   }
 }

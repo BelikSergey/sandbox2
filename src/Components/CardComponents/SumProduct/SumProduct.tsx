@@ -5,7 +5,7 @@ interface ISum {
 const SumProduct = ({ sum }: ISum) => {
   return (
     <div>
-      <span className="">{sum}</span>
+      <span className="Sum__Title">{sum}</span>
     </div>
   );
 };

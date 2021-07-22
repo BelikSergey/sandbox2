@@ -1,3 +1,7 @@
-export default function CardContainer({ children }) {
-  return <div className="Container">{children}</div>;
-}
+import React from "react";
+
+const CardContainer = ({ children}: any) => {
+  return <ul className="Card__Container">{children}</ul>;
+};
+
+export default CardContainer;

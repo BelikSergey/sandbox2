@@ -1,0 +1,16 @@
+.enter {
+  /* opacity: 0; */
+  transform: translateX(-100%);
+}
+.enterActive {
+  /* opacity: 1; */
+  transform: translateX(0);
+  transition: transform 250ms;
+}
+.exit {
+  transform: translateX(0);
+}
+.exitActive {
+  transform: translateX(-100%);
+  transition: transform 250ms;
+}

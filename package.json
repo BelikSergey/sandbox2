@@ -10,6 +10,7 @@
   "dependencies": {
     "@csstools/normalize.css": "11.0.1",
     "@material-ui/core": "4.12.1",
+    "@material-ui/icons": "4.11.2",
     "@types/react-redux": "7.1.18",
     "@types/react-transition-group": "4.4.2",
     "react": "17.0.2",
