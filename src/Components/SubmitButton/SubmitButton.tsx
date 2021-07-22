@@ -14,7 +14,7 @@ const SubmitButtom = () => {
 let ArrOrders = [];
     for (let prod of products){
       for (let item of prodObj){
-      if (item.id === prod.id){
+      if (item.id === prod.id && item.value !==0){
 let quantity = item.value/prod.price;
 const newProd = {...prod};
 newProd.order = quantity
