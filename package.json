@@ -1,11 +1,8 @@
 {
-  "name": "react",
+  "name": "d51tgcsbapp",
   "version": "1.0.0",
-  "description": "React example starter project",
-  "keywords": [
-    "react",
-    "starter"
-  ],
+  "description": "",
+  "keywords": [],
   "main": "src/index.js",
   "dependencies": {
     "@csstools/normalize.css": "11.0.1",
